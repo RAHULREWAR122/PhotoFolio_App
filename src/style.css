@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+body {
+  background: #e1dede;
+}
+
+.noty_theme__success {
+  background: #4caf50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 13px;
+  font-size: 1.3rem;
+  font-family: cursive;
+  border-bottom: 5px solid #46ffd7;
+}
+
+.mainBtn {
+  margin-top: 20px;
+  width: 100%;
+  text-align: right;
+}
+.mainBtn > button {
+  margin-right: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.added {
+  background-color: #438315;
+  color: #63c6c6;
+  height: 60px;
+  width: 130px;
+  border-radius: 10px;
+}
+.cancle {
+  background: red;
+  color: aliceblue;
+  height: 60px;
+  width: 130px;
+  border-radius: 10px;
+}
+
+.albumForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+.albumShow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #d6dbd2;
+  width: 60%;
+  height: 80%;
+  max-width: 950px;
+  max-height: 260px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 5px 4px #6b726b;
+}
+
+@media only screen and (max-width: 620px) {
+  .albumShow {
+    width: 90%;
+  }
+}
+
+.S1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+}
+.S2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+.S3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+.S3 > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.S3 > form > input {
+  height: 50px;
+  width: 70%;
+  max-width: 600px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+.S3 > form > button {
+  padding: 14px;
+  margin-left: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #717871;
+  width: 130px;
+}
+
+.S2 > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.S2 > form > input {
+  height: 50px;
+  width: 70%;
+  max-width: 600px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 2rem;
+}
+.S2 > form > button {
+  padding: 14px;
+  margin-left: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.albumList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.albums {
+  margin: 5px 10px 10px 10px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.Name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 270px;
+  width: 240px;
+  margin: 10px 20px 20px 20px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.albums:hover > .Name {
+  transform: scale(1.2);
+}
+
+.imgAlbum {
+  height: 90%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.nameOfAlbum {
+  width: 100%;
+  background: #9e9292;
+  height: 20%;
+  color: aliceblue;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 2rem;
+}
+
+.delete {
+  position: absolute;
+  top: -30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.4s;
+}
+.albums:hover > .delete {
+  top: 10px;
+}
+
+.deleteAlbum {
+  height: 30px;
+  width: 50px;
+}
+
+.albumImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  margin-top: 10px;
+  max-height: auto;
+}
+
+.img {
+  margin: 10px 5px 5px 10px;
+  height: 290px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.img > img {
+  height: 80%;
+  width: 100%;
+}
+
+.img > h2 {
+  background-color: #63c6c6;
+  height: 20%;
+  text-align: center;
+}
+
+.btns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: -70px;
+  transition: all 0.3s;
+}
+.img:hover > .btns {
+  top: 0;
+}
+
+.btns > button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btns > button:hover {
+  border-radius: 50%;
+  background: #595757;
+}
+
+.btnImg {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+}
+
+.NoImgText {
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.filterImg > input {
+  height: 55px;
+  width: 20%;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  text-align: center;
+  background: #c7bfbf;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.backBtn {
+  height: auto;
+  width: auto;
+  background: transparent;
+  margin: 10px 0px 10px 20px;
+}
+
+.goBack {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  background: #e31941;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.goBack:hover {
+  background: #d2d217;
+
+  transform: rotate(-360deg);
+}
