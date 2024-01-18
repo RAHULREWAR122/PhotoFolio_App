@@ -83,11 +83,11 @@ function Album() {
     // using condition rendring like how default page display and how render other slide when we clcik a perticular Album 
     // and send data with props
     <>
-      {selectedAlbum ? (
+          <Navbar />
+         {selectedAlbum ? (
         <AlbumListImages selectedAlbum={selectedAlbum} goBack={handleGoBack} />
       ) : (
         <>
-          <Navbar />
           {addAlbum !== "Add" && (
             <AddAlbumForm
               name={name}
