@@ -64,11 +64,11 @@ function Album() {
     // delete also on database
     const docRef = doc(db, "PhotoFolio", id);
     await deleteDoc(docRef);
-    // show notification after clicking delete
+    // show notification after clicking delete 
     NotyUse("delete");
   }
 
-  // handle album clcik to go inside the particular album
+  // handle album clcik to go inside the particular album 
   const handleAlbumClick = (albumId) => {
     setSelectedAlbum(albumId);
   };
@@ -80,7 +80,7 @@ function Album() {
 
   // this is the JSX
   return (
-    // using condition rendring like how default page display and how render other slide when we clcik a perticular Album
+    // using condition rendring like how default page display and how render other slide when we clcik a perticular Album 
     // and send data with props
     <>
       {selectedAlbum ? (
