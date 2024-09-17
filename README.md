@@ -9,7 +9,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Live Link :   https://photofolio-app-spce.onrender.com/
 
 Created the PhotoFolio App using React.js and Firebase Database .
 In this project we can make our Album and inside Album save images to give image Link and Caption of Image and we
