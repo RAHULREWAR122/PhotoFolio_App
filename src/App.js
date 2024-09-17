@@ -7,8 +7,15 @@ import "./style.css";
 
 // import Album
 import Album from "./Album";
+// import { config } from "dotenv";
 
 function App() {
+
+
+  
+console.log( "key",process.env.API_KEY);
+
+
   return (
     <>
       {/* display album Component */}

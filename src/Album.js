@@ -1,7 +1,6 @@
 // import firebase docs for sending our data / save data on firebase databse
 import {
   doc,
-  setDoc,
   collection,
   addDoc,
   onSnapshot,
@@ -24,6 +23,7 @@ function Album() {
   const [name, setName] = useState("");
   const [albumName, setAlbumName] = useState([]);
   const [selectedAlbum, setSelectedAlbum] = useState(null);
+
 
   //  we are using useEffect to show our data which is store on firebase
   useEffect(() => {
