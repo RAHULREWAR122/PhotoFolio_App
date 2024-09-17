@@ -8,7 +8,7 @@ node_modules/
 /src/firebase.js/
 # testing
 /coverage
-
+/.env
 # production
 /build
 
